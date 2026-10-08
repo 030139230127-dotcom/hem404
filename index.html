@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#292342">
+  <meta name="description" content="HẺM 404 Pixel World — trồng cây, nuôi lớn, phát triển khu vườn, thi đua bảng DCBAS giữa các cư dân.">
+  <title>HẺM 404 · Pixel World — Vào nhầm hẻm, gặp đúng người</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="config.js"></script>
+  <!-- Only fetch the Auth SDK when the owner activates real multi-user mode. Demo works without internet. -->
+  <script>
+    if (window.HEM404_CONFIG && window.HEM404_CONFIG.supabaseUrl && window.HEM404_CONFIG.supabaseAnonKey) {
+      document.write('<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"><\/script>');
+    }
+  </script>
+  <script defer src="assets/engine.js"></script>
+  <script defer src="assets/demo.js"></script>
+  <script defer src="assets/cloud.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <div id="app"><div class="loading-screen"><div class="loading-logo">✳ HẺM 404</div><p>Đang mở cánh cổng vào hẻm…</p></div></div>
+  <div id="toastRegion" aria-live="polite" class="toast-region"></div>
+  <div id="overlay" class="overlay hidden" aria-live="polite"></div>
+</body>
+</html>
